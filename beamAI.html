@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beam</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/beamAI.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Scripts -->
+    <script type="module" src="/JS/sidebar.js" defer></script>
+    <script type="module" src="/JS/beamAI.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="logo">Beam</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class='bx bx-search-alt'></i></button>
+        </div>
+        <a href="register_signin.html" target="_blank" id="SignInLink">SignIn</a>
+
+        <a href="profile.html"><img src="/Images/profile_default.png" alt="pfp" id="profilePic" style="display: none;"></a>
+
+        <i class='bx bx-menu' id="menuBtn"></i>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+            <li><a href="index.html"><i class='bx bx-user'></i> Feed</a></li>
+            <li><a href="messages.html"><i class='bx bx-chat'></i> Messages</a></li>
+            <li><a href="friends.html"><i class='bx bx-group'></i> Friends</a></li>
+            <li><a href="groups.html"><i class='bx bx-group'></i> Groups</a></li>
+            <li><a href="beamAI.html"><i class='bx bx-group'></i> BeamAI</a></li>
+            <li><a href="settings.html"><i class='bx bx-cog'></i> Setting</a></li>
+        </ul>
+
+        <div class="mini-profile">
+            <img src="/Images/profile_default.png" width="50" alt="default_profile" id="profile-pic">
+            <div class="profile-info">
+                <h3 id="profile-name">John Doe</h3>
+                <span>My Account</span>
+            </div>
+            <button id="logout"><i class='bx bx-log-out'></i></button>
+        </div>
+    </div>
+
+    <section class="main">
+        <h1>Chat with BeamAI</h1>
+
+        <div class="chats">
+            <div class="chat" id="chat">
+                <span>Being an idiot</span>
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="message beamAI">
+                    <span class="text">Hello! How can I assist you today?</span>
+                </div>
+                <div class="message user">
+                    <span class="text">I need help with my project.</span>
+                </div>
+                <div class="ai-typing" id="ai-typing">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="input" id="input">
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <div class="icons">
+                        <input type="file" id="upload-file" accept="image/*,video/*" multiple hidden>
+                        <label for="upload-file"><i class="bx bx-paperclip"></i></label>
+                        <input type="button" value="" id="microphone" hidden>
+                        <label for="upload-file"><i class="bx bx-microphone"></i></label>
+                    </div>
+                </div>
+                <button id="send-button">Send</button>
+            </div>
+    </section>
+</body>
+
+</html>
