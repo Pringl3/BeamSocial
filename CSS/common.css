@@ -48,6 +48,18 @@ header {
     z-index: 1000;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+#menuBtn-desktop {
+    display: block;
+    font-size: 50px;
+    color: var(--nav_links-colour);
+    cursor: pointer;
+}
+
 header .logo {
     color: var(--nav_links-colour);
     font-size: 50px;
@@ -148,6 +160,10 @@ header #menuBtn {
     color: var(--nav_links-colour);
     text-decoration: none;
     margin-top: 30px;
+    margin-left: -10px;
+
+    display: flex;
+    gap: 30px;
 }
 
 .sidebar .mini-profile {
@@ -195,10 +211,50 @@ header #menuBtn {
     cursor: pointer;
 }
 
+.sidebar.small {
+    width: 95px;
+
+    overflow: hidden;
+}
+
+.sidebar.small .mini-profile {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease-in-out;
+
+    > img {
+        display: none;
+    }
+
+    > .profile-info {
+        display: none;
+    }
+
+    > button {
+        width: 60px;
+        height: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     header {
         height: 120px;
+    }
+
+    #menuBtn-desktop {
+        display: none;
     }
 
     header .logo {

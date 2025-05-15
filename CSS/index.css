@@ -226,13 +226,19 @@
 }
 
 @media screen and (max-width: 768px) {
+    #feed {
+        width: 90%;
+        margin-left: -40px;
+        margin-top: 0;
+    }
+
     #feed .feed-form {
-        width: 80%;
+        width: 100%;
         margin-left: 120px;
     }
 
     #feed .feed-posts {
-        width: 80%;
+        width: 100%;
         margin-left: 120px;
         margin-top: 50px;
     }
