@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beam</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/index.css">
     <!-- Font Awesome and Boxicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
@@ -14,6 +15,48 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="index.html">Beam</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <a href="" class="loginLnk">Login</a>
+        <div class="user-menu">
+            <div class="user-icon">
+                <i class="bx bxs-user-circle"></i>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="bx bx-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <span class="close"><i class="bx bx-chevron-left"></i> Close Sidebar</span>
+        <ul>
+            <li><a href=""><i class="bx bx-home-alt"></i>Home</a></li>
+            <li><a href=""><i class="bx bx-search"></i>Explore</a></li>
+            <li><a href=""><i class="bx bx-group"></i>People</a></li>
+            <li><a href=""><i class="bx bx-message"></i>Messages</a></li>
+            <li><a href=""><i class="bx bx-bell"></i>Notifications</a></li>
+            <li><a href=""><i class="bx bx-bot"></i>BeamAI</a></li>
+        </ul>
+        <div class="mini-profile">
+            <div class="profile-pic">
+                <img src="/Images/defaultpfp.jpg" alt="">
+            </div>
+            <div class="profile-info">
+                <h4>Username</h4>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
